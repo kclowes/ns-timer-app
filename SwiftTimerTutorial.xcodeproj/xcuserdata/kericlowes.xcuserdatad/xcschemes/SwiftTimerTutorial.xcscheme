@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "89286F001C98A6E900961209"
+               BuildableName = "SwiftTimerTutorial.app"
+               BlueprintName = "SwiftTimerTutorial"
+               ReferencedContainer = "container:SwiftTimerTutorial.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "89286F141C98A6E900961209"
+               BuildableName = "SwiftTimerTutorialTests.xctest"
+               BlueprintName = "SwiftTimerTutorialTests"
+               ReferencedContainer = "container:SwiftTimerTutorial.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "89286F1F1C98A6E900961209"
+               BuildableName = "SwiftTimerTutorialUITests.xctest"
+               BlueprintName = "SwiftTimerTutorialUITests"
+               ReferencedContainer = "container:SwiftTimerTutorial.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "89286F001C98A6E900961209"
+            BuildableName = "SwiftTimerTutorial.app"
+            BlueprintName = "SwiftTimerTutorial"
+            ReferencedContainer = "container:SwiftTimerTutorial.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "89286F001C98A6E900961209"
+            BuildableName = "SwiftTimerTutorial.app"
+            BlueprintName = "SwiftTimerTutorial"
+            ReferencedContainer = "container:SwiftTimerTutorial.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "89286F001C98A6E900961209"
+            BuildableName = "SwiftTimerTutorial.app"
+            BlueprintName = "SwiftTimerTutorial"
+            ReferencedContainer = "container:SwiftTimerTutorial.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

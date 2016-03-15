@@ -9,17 +9,44 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var countingLabel: UILabel!
+
+    @IBAction func startButton(sender: AnyObject) {
+        SwiftTimer = NSTimer.scheduledTimerWithTimeInterval(
+            1,
+            target:self,
+            selector: Selector("updateCounter"),
+            userInfo: nil,
+            repeats: true
+        )
+    }
+
+    @IBAction func pauseButton(sender: AnyObject) {
+        SwiftTimer.invalidate()
+    }
+
+    @IBAction func clearButton(sender: AnyObject) {
+        SwiftTimer.invalidate()
+        SwiftCounter = 0
+        countingLabel.text = String(SwiftCounter)
+    }
+
+    var SwiftTimer = NSTimer()
+
+    var SwiftCounter = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        countingLabel.text = String(SwiftCounter)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-
+    func updateCounter() {
+        countingLabel.text = String(SwiftCounter++)
+    }
 }
 
